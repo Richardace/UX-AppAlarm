@@ -1,24 +1,21 @@
-# app-alarm
+# Pagina Web - App Alarm
 
-## Project setup
-```
-npm install
-```
+## Paginas Richard Acevedo
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Iniciar Sesión
 
-### Compiles and minifies for production
-```
-npm run build
-```
+![image](./evidencias/Richard_Acevedo/login.png)
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Solicitar cambio de contraseña
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![image](./evidencias/Richard_Acevedo/password_change_request.png)
+
+### Ingresa nueva contraseña
+
+![image](./evidencias/Richard_Acevedo/update_password.png)
+
+### Cambio de contraseña Exitoso
+
+![image](./evidencias/Richard_Acevedo/password_updated_confirmation.png)
+
+
