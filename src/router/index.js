@@ -1,18 +1,36 @@
 // router/index.js
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
+import StatisticsView from '@/views/StatisticsView.vue'
 import LoginView from '@/views/LoginView.vue'
 import ChangePassword from '@/views/ChangePassword.vue'
 import ConfirmNewPassword from '@/views/ConfirmNewPassword.vue'
+import ConfigView from '@/views/ConfigView.vue'
+import BackUpView from '@/views/BackUpView.vue'
+import SyncView from '@/views/SyncView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'HomeView',
-    component: HomeView
+    path: '/statistics',
+    name: 'StatisticsView',
+    component: StatisticsView
+  },
+  {
+    path: '/config',
+    name: 'ConfigView',
+    component: ConfigView
+  },
+  {
+    path: '/backup',
+    name: 'BackUpView',
+    component: BackUpView
+  },
+  {
+    path: '/sync',
+    name: 'SyncView',
+    component: SyncView
   },
   {
     path: '/login',
@@ -27,9 +45,6 @@ const routes = [
   {
     path: '/confirm-new-password',
     name: 'ConfirmNewPassword',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: ConfirmNewPassword
   
   }

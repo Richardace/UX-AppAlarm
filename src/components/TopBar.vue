@@ -19,22 +19,23 @@ export default {
   name: 'TopBar',
   data: () => ({
     isLogged: false,
+    allowedViews: ['HomeView', 'ConfigView', 'StatisticsView', 'SyncView', 'BackUpView'],
+
   }),
   created() {
-    // Check if view is "Home", "Config" and sets isLogged to true
-    if (this.$route.name === 'HomeView' || this.$route.name === 'ConfigView') {
-      this.isLogged = true;
-    }
-  },
-  watch: {
-    $route(to) {
-      if (to.name === 'HomeView' || to.name === 'ConfigView') {
-        this.isLogged = true;
-      } else {
-        this.isLogged = false;
-      }
+        if (this.allowedViews.includes(this.$route.name)) {
+            this.isLogged = true;
+        }
     },
-  },
+    watch: {
+        $route(to) {
+            if (this.allowedViews.includes(to.name)) {
+                this.isLogged = true;
+            } else {
+                this.isLogged = false;
+            }
+        },
+    },
 
 }
 </script>

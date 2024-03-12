@@ -19,10 +19,10 @@
                 ¿Has olvidado tu contraseña?
             </span>
         </v-row>
-        <v-row justify="center" class="mb-12">
+        <v-row justify="center" class="mb-10">
             <strong class="text-button" @click="goToChangePassword">Click aquí</strong>
         </v-row>
-        <v-row justify="center" class="mt-12">
+        <v-row justify="center" >
             <strong>
                 Regístrate
             </strong>
@@ -43,7 +43,7 @@ export default {
     methods: {
         login() {
             if (this.email !=="" && this.password !=="") {
-                this.$router.push({ name: 'HomeView' });
+                this.$router.push({ name: 'StatisticsView' });
             }
             this.error = true;
             setTimeout(() => {
