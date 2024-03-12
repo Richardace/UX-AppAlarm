@@ -57,6 +57,9 @@ export default {
   background-repeat: no-repeat;
 }
 
+button{
+  text-transform: capitalize !important;
+}
 
 /* For small devices */
 
