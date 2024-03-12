@@ -1,10 +1,10 @@
 <template>
-    <v-container class="pa-10" justify="center">
+    <v-container  justify="center">
         <v-row justify="center">
             <v-img src="@/assets/logoAppAlarm.png" max-height="200" max-width="200"></v-img>
         </v-row>
         <v-row justify="center" class="mb-12">
-            <v-col cols="5">
+            <v-col xs="12" sm="10" md="4" lg="4" xlg="3">
                 <v-form width="400">
                     <v-text-field v-model="user" label="Usuario" required></v-text-field>
                     <v-text-field v-model="password1" label="Nueva Contraseña" required type="password"></v-text-field>

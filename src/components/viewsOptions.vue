@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-container fluid class="pa-0" v-if="isLogged">
+        <v-container fluid class="big-devices pa-0" v-if="isLogged">
             <v-btn-toggle color="primary" group >
                 <v-btn class="button-view" :class="{ 'v-btn--active': statisticsView }" value="Estadísticas" @click="goToStatistics">
                     Estadísticas
@@ -120,7 +120,6 @@ export default {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0.5rem;
-    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     max-width: 300px;
     margin: 0px !important;
@@ -130,5 +129,7 @@ export default {
     background-color: #3F51B5 !important;
   
 }
+
+
 
 </style>

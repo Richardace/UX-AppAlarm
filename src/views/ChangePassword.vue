@@ -1,5 +1,5 @@
 <template>
-    <v-container class="pa-10" justify="center">
+    <v-container justify="center">
         <v-row justify="center" class="mb-5">
             <v-img src="@/assets/logoAppAlarm.png" max-height="200" max-width="200"></v-img>
         </v-row>
@@ -7,8 +7,8 @@
             Solicitud de cambio de contraseña
         </div>
         <v-row justify="center" class="mt-5 mb-12 pa-3">
-            <v-col cols="5">
-                <v-form width="400">
+            <v-col xs="12" sm="10" md="4" lg="4" xlg="3">
+                <v-form>
                     <v-text-field v-model="email" label="Correo" required></v-text-field>
                     <v-btn  disabled-color="grey lighten-2" @click="sendEmail" color="primary" dark block rounded>
                         Enviar Enlace

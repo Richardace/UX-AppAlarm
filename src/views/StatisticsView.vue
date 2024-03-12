@@ -1,50 +1,50 @@
 <template>
   <div>
     <v-container class="centered-text">
-      <v-row justify="start">
-      <v-col cols="1" class="px-0">Día</v-col>
-      <v-col cols="1" class="px-0 active" >Semana</v-col>
-      <v-col cols="1" class="px-0">Mes</v-col>
-      <v-col cols="1" class="px-0">Año</v-col>
-    </v-row> 
+      <v-row justify="start" class="mt-3 mb-3">
+        <v-col xs="3" sm="2" md="1" class="px-0">Día</v-col>
+        <v-col xs="3" sm="2" md="1" class="px-0 active">Semana</v-col>
+        <v-col xs="4" sm="2" md="1" class="px-0">Mes</v-col>
+        <v-col xs="3" sm="2" md="1" class="px-0">Año</v-col>
+      </v-row>
     </v-container>
     <v-container>
-     
-    <v-row class="mb-12" align="center">
-      <v-col cols="5">
-        <Pie id="statistics" :options="chartOptions" :data="chartData" :legend="{ position: 'right' }" />
-      </v-col>
-      <v-col>
-        <v-row>
-          <v-col cols="1" class="px-0">
-            <v-icon color="#7921f3">mdi-square</v-icon>
-          </v-col>
-          <v-col cols="11" class="px-0">Atendidos</v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="1" class="px-0">
-            <v-icon color="#f39821">mdi-square</v-icon>
-          </v-col>
-          <v-col cols="11" class="px-0">En espera</v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="1" class="px-0">
-            <v-icon color="#21d0f3">mdi-square</v-icon>
-          </v-col>
-          <v-col cols="11" class="px-0">Retrasados</v-col>
-        </v-row>
 
-      </v-col>
+      <v-row class="mb-12" align="center">
+        <v-col xs="12" sm="12" md="5">
+          <Pie id="statistics" :options="chartOptions" :data="chartData" :legend="{ position: 'right' }" />
+        </v-col>
+        <v-col class="pa-3">
+          <v-row>
+            <v-col cols="1" class="px-0">
+              <v-icon color="#7921f3">mdi-square</v-icon>
+            </v-col>
+            <v-col cols="11" class="px-0">Atendidos</v-col>
+          </v-row>
+          <v-row>
+            <v-col cols="1" class="px-0">
+              <v-icon color="#f39821">mdi-square</v-icon>
+            </v-col>
+            <v-col cols="11" class="px-0">En espera</v-col>
+          </v-row>
+          <v-row>
+            <v-col cols="1" class="px-0">
+              <v-icon color="#21d0f3">mdi-square</v-icon>
+            </v-col>
+            <v-col cols="11" class="px-0">Retrasados</v-col>
+          </v-row>
 
-    </v-row>
-    <v-row class="mt-12">
-      <span>
-        * Hace referencia al retraso promedio para atender un evento
-      </span>
-    </v-row>
-  </v-container>
+        </v-col>
+
+      </v-row>
+      <v-row class="mt-12">
+        <span>
+          * Hace referencia al retraso promedio para atender un evento
+        </span>
+      </v-row>
+    </v-container>
   </div>
-  
+
 </template>
 
 <script>
@@ -119,11 +119,12 @@ export default {
   font-size: 2.8rem;
   font-weight: bold;
 }
-.centered-text{
+
+.centered-text {
   text-align: center;
 }
-.active{
+
+.active {
   border-bottom: 3px solid #2196F3;
 }
-
 </style>

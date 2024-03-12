@@ -18,12 +18,12 @@
             <v-slider v-model="volume" prepend-icon="mdi-volume-low" append-icon="mdi-volume-high"></v-slider>
             <v-container>
                 <v-row>
-                    <v-col cols="6">
+                    <v-col xs="12" sm="12" md="6" >
                         <v-btn color="error" class="mr-4" outlined block @click="resetValidation">
                             Reestablecer Valores
                         </v-btn>
                     </v-col>
-                    <v-col cols="6">
+                    <v-col  xs="12" sm="12" md="6">
                         <v-btn color="primary"  block @click="saveConfig">
                             Guardar
                         </v-btn>

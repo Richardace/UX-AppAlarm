@@ -1,31 +1,36 @@
 <template>
     <v-container fluid>
-        <div class="card-container">
-            <v-card class="pa-3" max-width="180">
-                <v-card-text class="text-center">
-                    <v-img src="@/assets/logos/drive.png"></v-img>
-                </v-card-text>
-                <v-card-action class="text-center">
-                    <div class="mx-auto">Google Drive</div>
-                </v-card-action>
-            </v-card>
-            <v-card class="pa-3" max-width="180">
-                <v-card-text class="text-center">
-                    <v-img src="@/assets/logos/onedrive.png"></v-img>
-                </v-card-text>
-                <v-card-action class="text-center">
-                    <div class="mx-auto">onedrive</div>
-                </v-card-action>
-            </v-card>
-            <v-card class="pa-3" max-width="180" justify="center">
-                <v-card-text class="text-center">
-                    <v-img class="mx-auto" src="@/assets/logos/dropbox.png" width="80" height="80"></v-img>
-                </v-card-text>
-                <v-card-action class="text-center">
-                    <div class="mx-auto">Dropbox</div>
-                </v-card-action>
-            </v-card>
-        </div>
+        <v-row justify="center" class="card-container">
+            <v-col md="4" sm="4" xs="12">
+                <v-card class="pa-3 mx-auto" max-width="180">
+                    <v-card-text class="text-center">
+                        <v-img src="@/assets/logos/drive.png"></v-img>
+                    </v-card-text>
+                    <v-card-action class="text-center">
+                        <div class="mx-auto">Google Drive</div>
+                    </v-card-action>
+                </v-card>
+            </v-col>
+            <v-col md="4" sm="4" xs="12">
+                <v-card class="pa-3 mx-auto" max-width="180">
+                    <v-card-text class="text-center">
+                        <v-img src="@/assets/logos/onedrive.png"></v-img>
+                    </v-card-text>
+                    <v-card-action class="text-center">
+                        <div class="mx-auto">onedrive</div>
+                    </v-card-action>
+                </v-card>
+            </v-col>
+            <v-col md="4" sm="4" xs="12">
+                <v-card class="pa-3 mx-auto" max-width="180" justify="center">
+                    <v-card-text class="text-center">
+                        <v-img class="mx-auto" src="@/assets/logos/dropbox.png" width="80" height="80"></v-img>
+                    </v-card-text>
+                    <v-card-action class="text-center">
+                        <div class="mx-auto">Dropbox</div>
+                    </v-card-action>
+                </v-card></v-col>
+        </v-row>
     </v-container>
 </template>
 
@@ -70,8 +75,8 @@ export default {
 <style scoped>
 .card-container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     height: 60vh;
 }
 
@@ -79,6 +84,7 @@ export default {
     width: 170px;
     height: 170px;
 }
+
 .text-center {
     text-align: center;
 }

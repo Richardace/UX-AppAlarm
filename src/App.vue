@@ -3,7 +3,7 @@
     <TopBar></TopBar>
     <div class="background-image pa-9">
       <viewsOptions></viewsOptions>
-      <div :class="{ 'view-container':  isLogged}">
+      <div :class="{ 'view-container': isLogged }">
         <router-view></router-view>
       </div>
 
@@ -49,7 +49,6 @@ export default {
   size: 65%;
   width: 100%;
   height: 100%;
-  max-height: 90vh;
   top: 0;
   left: 0;
   background-image: url('@/assets/fondoApp.png');
@@ -58,8 +57,50 @@ export default {
   background-repeat: no-repeat;
 }
 
-.view-container {
-  height: 90%;
-  border: 1px solid #D9D9D9 !important;
+
+/* For small devices */
+
+
+@media (max-width: 700px) {
+  .big-devices {
+    display: none;
+  }
+
+  .small-devices {
+    display: block;
+  }
+
+  .view-container {
+    height: 100%;
+  }
+
+  
+  .view-container {
+    height: 100vh;
+    border: 1px solid #D9D9D9 !important;
+  }
+  .form-sm-devices
+  {
+    width: 100% !important;
+  }
+
+}
+
+/* For big devices */
+@media (min-width: 700px) {
+  .big-devices {
+    display: block;
+  }
+
+  .small-devices {
+    display: none;
+  }
+
+  .view-container {
+    height: 90%;
+    border: 1px solid #D9D9D9 !important;
+  }
+  
+
 }
 </style>
